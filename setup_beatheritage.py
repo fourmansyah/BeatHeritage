@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 class BeatHeritageSetup:
     """Setup BeatHeritage V1 model and dependencies"""
     
-    def __init__(self, model_id: str = "hongminh54/BeatHeritage-v1"):
+    def __init__(self, model_id: str = "fourmansyah/BeatHeritage-v1"):
         self.model_id = model_id
         self.cache_dir = Path.home() / ".cache" / "beatheritage"
         self.model_dir = Path("models") / "beatheritage_v1"
@@ -168,7 +168,7 @@ class BeatHeritageSetup:
             logger.info("Downloading osu-diffusion-v2...")
             
             snapshot_download(
-                repo_id="hongminh54/osu-diffusion-v2",
+                repo_id="fourmansyah/osu-diffusion-v2",
                 local_dir=diffusion_dir,
                 cache_dir=self.cache_dir,
                 resume_download=True
@@ -288,7 +288,7 @@ def main():
     parser.add_argument(
         '--model-id',
         type=str,
-        default='hongminh54/BeatHeritage-v1',
+        default='fourmansyah/BeatHeritage-v1',
         help='Hugging Face model ID'
     )
     parser.add_argument(
