@@ -13,7 +13,7 @@ dataset:
 
 # Model configurations to compare
 models:
-  reference: 'hongminh54/BeatHeritage-v1'
+  reference: 'fourmansyah/BeatHeritage-v1'
   baseline: 'OliBomby/Mapperatorinator-v30'
 
 # Evaluation metrics
